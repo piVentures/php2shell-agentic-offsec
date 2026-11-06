@@ -34,10 +34,6 @@ The live assessment did not include exploitation or command execution.
 |---|---|
 | Organization | Werabe University |
 | Primary Target | `https://wru.edu.et/` |
-| Reported IP | `185.151.30.180` |
-| Web Server | Apache |
-| Backend PHP | PHP 7.0.33 |
-| CDN / Proxy | StackCDN |
 | Assessment Type | Authorized, non-destructive security assessment |
 
 The RIMS test subdomain was identified during reconnaissance. It is not considered an independently authorized target unless included in the engagement scope.
