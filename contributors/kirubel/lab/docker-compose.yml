@@ -1,0 +1,20 @@
+services:
+  vulnerable-php:
+    image: php:8.3.35-apache
+    container_name: php2shell-target
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.php:/var/www/html/index.php
+      - ./php.ini:/usr/local/etc/php/conf.d/zz-custom.ini
+    restart: unless-stopped
+
+  patched-php:
+    image: php:8.3.36-apache
+    container_name: php2shell-patched
+    ports:
+      - "8081:80"
+    volumes:
+      - ./index.php:/var/www/html/index.php
+      - ./php.ini:/usr/local/etc/php/conf.d/zz-custom.ini
+    restart: unless-stopped
